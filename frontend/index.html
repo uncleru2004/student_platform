@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+	<nav class="navbar">
+		<h1 class="nav-brand">Educational platform</h1>
+	</nav>
+
+	<section>
+		<div class="container">
+			<form action="#" id="studentForm">
+				<label for="firstName">Your name</label>
+				<input class="input" type="text" id="firstName" required name="firstName" autocomplete="off">
+
+				<label for="surname">Your surname</label>
+				<input class="input" type="text" id="surname" required name="surname" autocomplete="off">
+
+				<label for="surname">Your address</label>
+				<input class="input" type="text" id="address" required name="address" autocomplete="off">
+
+				<label for="surname">Your age</label>
+				<input class="input" type="number" id="age" required name="age" min="1" max="100" autocomplete="off">
+
+				<button id="mainFormBtn" class="btn btn-outline" disabled>Submit</button>
+			</form>
+
+			<table class="table" id="studentTable">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Surname</th>
+						<th>Address</th>
+						<th>Age</th>
+						<th></th>
+					</tr>
+				</thead>
+
+				<tbody class="tbody" id="studentData">
+					<!-- Вставка данных  -->
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<dialog class="update_modal">
+		<button class="delete-btn cross-btn">
+			<svg class="modal modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			  <path class="modal___cross"
+				d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+			</svg>
+		</button>
+		
+		<form action="#" id="studentForm__update">
+			<label for="firstName">Your name</label>
+			<input class="input" type="text" id="firstName" required name="firstName" autocomplete="off">
+
+			<label for="surname">Your surname</label>
+			<input class="input" type="text" id="surname" required name="surname" autocomplete="off">
+
+			<label for="surname">Your address</label>
+			<input class="input" type="text" id="address" required name="address" autocomplete="off">
+
+			<label for="surname">Your age</label>
+			<input class="input" type="number" id="age" required name="age" min="1" max="100" autocomplete="off">
+
+			<button id="updateFormBtn" class="btn btn-outline" disabled>Submit</button>
+		</form>
+	</dialog>
+
+
+	<script type="module" src="src/js/index.js"></script>
+</body>
+
+</html>
